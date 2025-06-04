@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    
+    align-items: flex-end;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Açık gri bir arka plan */
+    font-family: Arial, sans-serif; /* Basit bir yazı tipi */
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+button {
+    position: relative;
+    padding: 15px 30px; /* Butonun iç boşluğu */
+    font-size: 18px; /* Buton yazısının boyutu */
+    background-color: #007bff; /* Mavi bir buton rengi */
+    color: white; /* Yazı rengi beyaz */
+    border: 5px; /* Kenarlık yok */
+    border-radius: 5px; /* Hafif yuvarlak köşeler */
+    cursor: pointer; /* Fare butona geldiğinde işaretçi değişir */
+    transition: background-color 0.6s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent; 
+  
+}
+.button-text-outline {
+    position: absolute;
+    white-space: nowrap;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    z-index: 1;
+}
+
+.button-text-fill {
+    position: relative;
+    white-space: nowrap;
+    color: white;
+    z-index: 2;
+
+}
+
+button:hover {
+    background-color: #0056b3; /* Butonun üzerine gelince daha koyu mavi olur */
+}
